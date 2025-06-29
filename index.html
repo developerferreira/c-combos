@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C-Combos</title>
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="main__div">
+        <header>
+            <h1><a href="index.html">C-Combos</a></h1>
+            <ul>
+                <li><a href="src/create.html">Criar</a></li>
+                <li><a href="https://discord.gg/W2qRssup8a" target="_blank">Discord</a></li>
+                <li><a href="https://github.com/developerferreira" target="_blank">Github</a></li>
+            </ul>
+        </header>
+
+        <main>
+            <div class="search__body">
+                <h1>Encontre o melhor kit para sua conta no <span class="cops__span">Critical OPS</span>!</h1>
+                <p>Aqui, você poderá criar os melhores kits, seja de TR ou de CT.</p>
+                <div class="search__div">
+                    <i class="bi bi-filter-square" onclick="showFilters()"></i>
+                    <div class="filter__items">
+                        <h2>Itens</h2>
+                        <div class="select-item">
+                            <input type="checkbox" class="filter-checkbox" name="item" value="gloves" id="gloves">
+                            <h3>Luvas</h3>
+                        </div>
+
+                        <div class="select-item">
+                            <input type="checkbox" class="filter-checkbox" name="item" value="knives" id="knives">
+                            <h3>Facas</h3>
+                        </div>
+
+                        <h2>Cores</h2>
+                        <div class="filter__colors">
+                            <div>
+                                <div class="select-item">
+                                    <input type="checkbox" class="filter-checkbox" name="item" value="orange" id="orange-filter">
+                                    <h3>Laranja</h3>
+                                </div>
+                                <div class="select-item">
+                                    <input type="checkbox" class="filter-checkbox" name="item" value="white" id="white-filter">
+                                    <h3>Branco</h3>
+                                </div>
+                                <div class="select-item">
+                                    <input type="checkbox" class="filter-checkbox" name="item" value="red" id="red-filter">
+                                    <h3>Vermelho</h3>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="select-item">
+                                    <input type="checkbox" class="filter-checkbox" name="item" value="yellow" id="yellow-filter">
+                                    <h3>Amarelo</h3>
+                                </div>
+                                <div class="select-item">
+                                    <input type="checkbox" class="filter-checkbox" name="item" value="silver" id="silver-filter">
+                                    <h3>Prata</h3>
+                                </div>
+                                <div class="select-item">
+                                    <input type="checkbox" class="filter-checkbox" name="item" value="brown" id="brown-filter">
+                                    <h3>Marrom</h3>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="select-item">
+                                    <input type="checkbox" class="filter-checkbox" name="item" value="blue" id="blue-filter">
+                                    <h3>Azul</h3>
+                                </div>
+                                <div class="select-item">
+                                    <input type="checkbox" class="filter-checkbox" name="item" value="green" id="green-filter">
+                                    <h3>Verde</h3>
+                                </div>
+                                <div class="select-item">
+                                    <input type="checkbox" class="filter-checkbox" name="item" value="black" id="black-filter">
+                                    <h3>Preto</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h2>Preço</h2>
+                        <div class="select-item">
+                            <h3>Valor mínimo</h3>
+                            <input type="number" name="item" id="min-price" placeholder="Preço mínimo">
+                        </div>
+                        <div class="select-item">
+                            <h3>Valor máximo</h3>
+                            <input type="number" name="item" id="max-price" placeholder="Preço máximo">
+                        </div>
+                    </div>
+
+                    <input type="text" name="item-name" id="item-name" placeholder="Buscar item" title="Buscar item.">
+                    <i class="bi bi-arrow-right-square-fill" onclick="applyFilter()"></i>
+                </div>
+            </div>
+
+            <aside>
+                <h2>KITs Populares</h2>
+
+                <div class="intro__combos">
+                    <a href="src/item-info.html?item=regeneration">
+                        <img src="src/imgs/regeneration_combo.png" style="width: 200px;">
+                    </a>
+                    <a href="src/item-info.html?item=candido">
+                        <img src="src/imgs/candido_combo.png">
+                    </a>
+                    <a href="src/item-info.html?item=sanguine">
+                        <img src="src/imgs/sanguine_combo.png">
+                    </a>
+                </div>
+
+                <hr>
+
+                <h2 style="margin-top: 50px;">Adicionados Recentemente</h2>
+                <div class="intro__combos">
+                    <a href="src/item-info.html?item=gold_inlay">
+                        <img src="src/imgs/gold-inlay_knife.png">
+                    </a>
+                    <a href="src/item-info.html?item=navy">
+                        <img src="src/imgs/navy_glove.png">
+                    </a>
+            </aside>
+        </main>
+
+        <footer>
+            <p>Não encontrou a faca ou a luva que procurava? Ajude a melhorar o projeto entrando no nosso <a href="https://discord.gg/W2qRssup8a" target="_blank">Discord</a>.</p>
+            <p><strong>© 2025 Felipe Ferreira. All rights reserved.</strong></p>
+        </footer>
+    </div>
+
+    <script src="src/scripts/main.js"></script>
+</body>
+</html>

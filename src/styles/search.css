@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+JP+N&display=swap');
+
+:root {
+    --cf-fcolor: #F86526; /* critical force font color */
+    --cf-bgcolor: #0B2D3C; /* critical force background color */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--cf-bgcolor);
+}
+
+header h1, a {
+    color: var(--cf-fcolor);
+    font-family: WDXL Lubrifont JP N;
+    text-decoration: none;
+}
+
+header ul {
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+    list-style: none;
+}
+
+header li > a {
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+header li > a:hover {
+    text-decoration: underline 3px;
+}
+
+main h1 {
+    text-align: center;
+    font-family: sans-serif;
+    color: var(--cf-fcolor);
+}
+
+.item__div {
+    padding: 10px;
+}
+
+.item__div a {
+    /* background-color: purple; */
+    width: 100px;
+    font-family: sans-serif;
+    color: var(--cf-bgcolor);
+}
+
+.item__div a:hover, img:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.item__name {
+    font-family: sans-serif;
+    text-transform: capitalize;
+    color: var(--cf-bgcolor);
+}

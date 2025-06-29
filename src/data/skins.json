@@ -1,0 +1,50 @@
+{
+    "candido": {
+        "description": "O kit Candido consiste em uma push daggers junto com luvas totalmente brancas, permitindo que você faça o famoso full-white no seu inventário.",
+        "color": "white",
+        "knife": "imgs/candido_knife.png",
+        "glove": "imgs/candido_glove.png",
+        "gameCombo": "imgs/candido_gameCombo.webp",
+        "inspectCombo": "imgs/candido_inspectCombo.webp",
+        "inGame_gloves": "imgs/candido_ingame_gloves.webp",
+        "inGame_gloves2": "imgs/candido_ingame_gloves2.webp",
+        "knife_price": "18000",
+        "glove_price": "18000"
+    },
+    "regeneration": {
+        "description": "O kit Regeneration conta com uma dragonhorn e uma luva, ambas com a temática de uma fênix nas cores laranja e preto.",
+        "color": "orange, black",
+        "knife": "imgs/regeneration_knife.png",
+        "glove": "imgs/regeneration_glove.png",
+        "gameCombo": "imgs/regeneration_gameCombo.webp",
+        "inspectCombo": "imgs/regeneration_inspectCombo.webp",
+        "inGame_gloves": "imgs/regeneration_ingame_gloves.webp",
+        "inGame_gloves2": "imgs/regeneration_ingame_gloves2.webp",
+        "knife_price": "5000",
+        "glove_price": "10000"
+    },
+    "sanguine": {
+        "description": "O kit Sanguine contém uma karambit e uma luva da cor vermelha com preto. Um kit lindo e com preço acessível para aqueles que não querem gastar muito.",
+        "color": "red, white & black",
+        "knife": "imgs/sanguine_knife.png",
+        "glove": "imgs/sanguine_glove.png",
+        "gameCombo": "imgs/sanguine_gameCombo.webp",
+        "inspectCombo": "imgs/sanguine_inspectCombo.webp",
+        "inGame_gloves": "imgs/sanguine_ingame_gloves.webp",
+        "inGame_gloves2": "imgs/sanguine_ingame_gloves2.webp",
+        "knife_price": "2400",
+        "glove_price": "3300"
+    },
+    "gold_inlay": {
+        "description": "A faca Gold Inlay não contém uma luva pŕopria, mas suas cores dão maior liberdade ao usuário, uma vez que existem várias luvas que combinem com elas.",
+        "color": "yellow, silver & brown",
+        "knife": "imgs/gold-inlay_knife.png",
+        "knife_price": "1300"
+    },
+    "navy": {
+        "description": "A luva Inlay conta com a cor azul em destaque e uns detalhes na cor preta. É uma luva que da a liberdade maior ao usuário para escolher uma faca.",
+        "color": "blue & black",
+        "knife": "imgs/navy_glove.png",
+        "knife_price": "2400"
+    }
+}
