@@ -87,6 +87,7 @@ main img {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 20px;
     margin-top: 20px;
 }
@@ -134,4 +135,10 @@ h3 {
 .obs-contrast {
     color: var(--cf-fcolor);
     text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .slider img {
+        width: 100%;
+    }
 }
