@@ -156,6 +156,14 @@ aside h2 {
     color: var(--cf-bgcolor);
 }
 
+.intro__combos {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding-bottom: 10px;
+    scroll-behavior: smooth;
+}
+
 .intro__combos img {
     width: 160px;
     height: 150px;
