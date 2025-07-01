@@ -1,12 +1,19 @@
 const params = new URLSearchParams(window.location.search)
 const itemName = params.get('item')
 
+function formatItemName(key) {
+  return key
+    .split('_')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
+}
+
 fetch('data/skins.json')
     .then(response => response.json())
     .then(items => {
         if (items[itemName]) {
             const item = items[itemName]
-            document.querySelector('#name').textContent = [itemName]
+            document.querySelector('#name').textContent = formatItemName(itemName)
             document.querySelector('#description').textContent = item.description
             document.querySelector('#knife-price').textContent = item.knife_price || '--'
             document.querySelector('#glove-price').textContent = item.glove_price || '--'

@@ -44,7 +44,7 @@
     "navy": {
         "description": "A luva Inlay conta com a cor azul em destaque e uns detalhes na cor preta. É uma luva que da a liberdade maior ao usuário para escolher uma faca.",
         "color": "blue & black",
-        "knife": "imgs/navy_glove.png",
-        "knife_price": "2400"
+        "glove": "imgs/navy_glove.png",
+        "glove_price": "2400"
     }
 }
