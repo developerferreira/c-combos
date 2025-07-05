@@ -2,6 +2,7 @@
     "candido": {
         "description": "O kit Candido consiste em uma push daggers junto com luvas totalmente brancas, permitindo que você faça o famoso full-white no seu inventário.",
         "color": "white",
+        "mainColor": "white",
         "knife": "imgs/candido_knife.png",
         "glove": "imgs/candido_glove.png",
         "gameCombo": "imgs/candido_gameCombo.webp",
@@ -14,6 +15,7 @@
     "regeneration": {
         "description": "O kit Regeneration conta com uma dragonhorn e uma luva, ambas com a temática de uma fênix nas cores laranja e preto.",
         "color": "orange, black",
+        "mainColor": "orange",
         "knife": "imgs/regeneration_knife.png",
         "glove": "imgs/regeneration_glove.png",
         "gameCombo": "imgs/regeneration_gameCombo.webp",
@@ -26,6 +28,7 @@
     "sanguine": {
         "description": "O kit Sanguine contém uma karambit e uma luva da cor vermelha com preto. Um kit lindo e com preço acessível para aqueles que não querem gastar muito.",
         "color": "red, white & black",
+        "mainColor": "red",
         "knife": "imgs/sanguine_knife.png",
         "glove": "imgs/sanguine_glove.png",
         "gameCombo": "imgs/sanguine_gameCombo.webp",
@@ -38,60 +41,70 @@
     "gold_inlay": {
         "description": "A faca Gold Inlay não contém uma luva pŕopria, mas suas cores dão maior liberdade ao usuário, uma vez que existem várias luvas que combinem com elas.",
         "color": "yellow, silver & brown",
+        "mainColor": "yellow",
         "knife": "imgs/gold-inlay_knife.png",
         "knife_price": "440"
     },
     "navy": {
         "description": "A luva Navy conta com a cor azul em destaque e uns detalhes na cor preta. É uma luva que da a liberdade maior ao usuário para escolher uma faca.",
         "color": "blue & black",
+        "mainColor": "blue",
         "glove": "imgs/navy_glove.png",
         "glove_price": "670"
     },
     "power_gloves": {
         "description": "A luva Power Gloves é uma das luvas mais caras presentes no jogo. Conta com detalhes dourados e azul, sendo uma das luvas mais queridas pelos usuários.",
         "color": "yellow, white, black & cian",
+        "mainColor": "white",
         "glove": "imgs/power-gloves_glove.png",
         "glove_price": "46000"
     },
     "continuum": {
         "description": "A luva Continuum contém uma temática 'espacial', com uma forte presença da cor azul e preto, tendo também algumas linhas brancas presentes.",
         "color": "blue, white & black",
+        "mainColor": "blue",
         "glove": "imgs/continuum_glove.png",
         "glove_price": "7200"
     },
     "kento_jutsu": {
         "description": "A luva Kento Jutsu conta com o desenho de um personagemnas cores laranja, amarelo e azul. Perfeita para montar um kit de TR!",
         "color": "yellow, orange & blue",
-        "glove": "imgs/power-gloves_glove.png",
+        "mainColor": "yellow",
+        "glove": "imgs/kento-jutsu_glove.png",
         "glove_price": "6500"
     },
     "black_paisley": {
         "description": "Sendo uma das luvas mais caras presente dentro do jogo, a luva Paisley conta com as cores preto e branco. Combinando com diversas facas!",
         "color": "black & white",
+        "mainColor": "black",
         "glove": "imgs/black-paisley_glove.png",
         "glove_price": "19116"
     },
     "draco_umbra": {
-        "description": "Draco Umbra é a remix mais cara do jogo. Contém as cores branco e preto com um dragão desenhado em sua lâmina.",
+        "description": "Draco Umbra é uma das remix mais caras do jogo. Contém as cores branco e preto com um dragão desenhado em sua lâmina.",
         "color": "black & white",
+        "mainColor": "black",
         "knife": "imgs/draco-umbra_knife.png",
         "knife_price": "48000"
     },
     "amur": {
         "description": "A faca Amur é uma das balisong mais caras do jogo. Com as cores laranja e preto, é perfeita para criar um kit de TR!",
         "color": "orange & black",
+        "mainColor": "orange",
         "knife": "imgs/amur_knife.png",
         "knife_price": "22500"
     },
     "fire_and_ice": {
         "description": "A faca Fire and Ice é contém uma grande diversidades de cores, sendo laranja na ponta e azul na lâmina.",
         "color": "blue, cian, orange & yellow",
+        "mainColor": "blue",
         "knife": "imgs/fire-and-ice_knife.png",
         "knife_price": "11000"
     },
     "porcelain": {
         "description": "A remix Porcelain conta com as simples cores preto e branco, contendo alguns desenhos nessas mesmas cores.",
         "color": "black & white",
+        "mainColor": "black",
         "knife": "imgs/porcelain_knife.png",
         "knife_price": "3444"
     }

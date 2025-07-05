@@ -45,3 +45,53 @@ header li > a {
 header li > a:hover {
     text-decoration: underline 3px;
 }
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    /* gap: 20px; */
+}
+
+.left__container {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.left__container img {
+    width: 150px;
+}
+
+.left__container input {
+    padding: 10px;
+    border: 1px solid var(--cf-fcolor);
+    border-radius: 5px;
+}
+
+.left__container select {
+    border: 1px solid var(--cf-fcolor);
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.right__container {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.right__container img {
+    width: 150px;
+}
+
+.right__container p {
+    text-wrap: pretty;
+}
