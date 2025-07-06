@@ -55,14 +55,14 @@
     "power_gloves": {
         "description": "A luva Power Gloves é uma das luvas mais caras presentes no jogo. Conta com detalhes dourados e azul, sendo uma das luvas mais queridas pelos usuários.",
         "color": "yellow, white, black & cian",
-        "mainColor": "white",
+        "mainColor": "yellow, white",
         "glove": "imgs/power-gloves_glove.png",
         "glove_price": "46000"
     },
     "continuum": {
         "description": "A luva Continuum contém uma temática 'espacial', com uma forte presença da cor azul e preto, tendo também algumas linhas brancas presentes.",
         "color": "blue, white & black",
-        "mainColor": "blue",
+        "mainColor": "blue & black",
         "glove": "imgs/continuum_glove.png",
         "glove_price": "7200"
     },
@@ -76,7 +76,7 @@
     "black_paisley": {
         "description": "Sendo uma das luvas mais caras presente dentro do jogo, a luva Paisley conta com as cores preto e branco. Combinando com diversas facas!",
         "color": "black & white",
-        "mainColor": "black",
+        "mainColor": "black & white",
         "glove": "imgs/black-paisley_glove.png",
         "glove_price": "19116"
     },
@@ -88,9 +88,9 @@
         "knife_price": "48000"
     },
     "amur": {
-        "description": "A faca Amur é uma das balisong mais caras do jogo. Com as cores laranja e preto, é perfeita para criar um kit de TR!",
-        "color": "orange & black",
-        "mainColor": "orange",
+        "description": "A faca Amur é uma das balisong mais caras do jogo. Com as cores amarelo e preto, é perfeita para criar um kit de TR!",
+        "color": "yellow & black",
+        "mainColor": "yellow",
         "knife": "imgs/amur_knife.png",
         "knife_price": "22500"
     },

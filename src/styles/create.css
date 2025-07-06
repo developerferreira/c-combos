@@ -95,3 +95,9 @@ main {
 .right__container p {
     text-wrap: pretty;
 }
+
+.right__container select {
+    border: 1px solid var(--cf-fcolor);
+    border-radius: 5px;
+    background-color: transparent;
+}
