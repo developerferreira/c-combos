@@ -32,11 +32,31 @@ fetch('data/skins.json')
 
     typeSelect.addEventListener('change', () => {
         const selectedType = typeSelect.value
-        userItemSelect.innerHTML = '<option disabled selected>Selecionar</option>'
+        userItemSelect.innerHTML = '<option disabled selected>Select</option>'
 
         Object.entries(data).forEach(([key, item]) => {
             const hasItem = selectedType === 'knife' ? item.knife : item.glove
             if (hasItem) {
+                const option = document.createElement('option')
+                option.value = key
+                option.textContent = toTitleCase(key)
+                userItemSelect.appendChild(option)
+            }
+        })
+    })
+
+    searchInput.addEventListener('input', () => {
+        const query = searchInput.value.toLowerCase().trim()
+        const selectedType = typeSelect.value
+
+        userItemSelect.innerHTML = '<option disabled selected>Select</option>'
+
+        Object.entries(data).forEach(([key, item]) => {
+            const hasItem = selectedType == 'knife' ? item.knife : item.glove
+            const normalizedKey = key.replace(/_/g, ' ').toLowerCase()
+            const matchesSearch = normalizedKey.includes(query)
+
+            if (hasItem && matchesSearch) {
                 const option = document.createElement('option')
                 option.value = key
                 option.textContent = toTitleCase(key)
@@ -68,7 +88,7 @@ fetch('data/skins.json')
             })
 
             const matchSelect = document.getElementById('match-selector')
-            matchSelect.innerHTML = '<option disabled selected>Opções sugeridas</option>'
+            matchSelect.innerHTML = '<option disabled selected>Suggested options</option>'
 
             matches.forEach(([matchKey, matchItem]) => {
                 const opt = document.createElement('option')
