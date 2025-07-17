@@ -37,15 +37,23 @@ fetch('data/skins.json')
             const colorFilters = filter.filter(f => !['knives', 'gloves'].includes(f))
 
             if (colorFilters.length > 0) {
-                const itemColor = (item.color || '').toLowerCase();
+                const itemColors = (item.color || '')
+                    .toLowerCase()
+                    .split(/,|&/)
+                    .map(c => c.trim())
+                    .filter(Boolean);
+
                 if (hasKnifeFilter && !hasGloveFilter) {
-                    matchesColor = !!item.knife && colorFilters.some(color => itemColor.includes(color));
+                    matchesColor = !!item.knife && colorFilters.some(f => itemColors.includes(f));
                 } else if (!hasKnifeFilter && hasGloveFilter) {
-                    matchesColor = !!item.glove && colorFilters.some(color => itemColor.includes(color));
+                    matchesColor = !!item.glove && colorFilters.some(f => itemColors.includes(f));
                 } else if (hasKnifeFilter && hasGloveFilter) {
-                    matchesColor = (item.knife || item.glove) && colorFilters.some(color => itemColor.includes(color));
+                    matchesColor = (
+                        (item.knife && colorFilters.some(f => itemColors.includes(f))) ||
+                        (item.glove && colorFilters.some(f => itemColors.includes(f)))
+                    );
                 } else {
-                    matchesColor = colorFilters.some(color => itemColor.includes(color));
+                    matchesColor = colorFilters.some(f => itemColors.includes(f));
                 }
             }
 
@@ -107,6 +115,6 @@ fetch('data/skins.json')
                 resultsDiv.appendChild(itemDiv)
             })
         } else {
-            resultsDiv.innerHTML = '<p>Nenhum item encontrado. Verifique se o filtro está correto ou retire todos os filtros de cor.</p>'
+            resultsDiv.innerHTML = '<p>No items found. Please make sure the filter is correct!</p>'
         }
     })
