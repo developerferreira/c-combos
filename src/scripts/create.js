@@ -66,41 +66,53 @@ fetch('data/skins.json')
     })
 
     userItemSelect.addEventListener('change', () => {
-        const selectedName = userItemSelect.value
-        const selectedType = typeSelect.value
-        const item = data[selectedName]
+    const selectedName = userItemSelect.value
+    const selectedType = typeSelect.value
+    const item = allData[selectedName]
 
-        if (item) {
-            const imageSrc = selectedType === 'knife' ? item.knife : item.glove
-            userItemImg.src = imageSrc
-            userItemImg.alt = toTitleCase(selectedName)
+    if (item) {
+        const imageSrc = selectedType === 'knife' ? item.knife : item.glove
+        userItemImg.src = imageSrc
+        userItemImg.alt = toTitleCase(selectedName)
 
-            const currentColor = item.mainColor?.toLowerCase() || ''
-            const matchType = selectedType === 'knife' ? 'glove' : 'knife'
+        const matchType = selectedType === 'knife' ? 'glove' : 'knife'
 
-            const matches = Object.entries(data).filter(([_, i]) => {
-                if (matchType === 'knife' && !i.knife) return false
-                if (matchType === 'glove' && !i.glove) return false
-                const currentColors = (item.mainColor || '').toLowerCase().split(/,|&/).map(c => c.trim())
-                const matchColors = (i.mainColor || '').toLowerCase().split(/,|&/).map(c => c.trim())
+        // Extrair as cores do item selecionado, separando por ',' e '&' e limpando espaços
+        const currentColors = (item.mainColor || '')
+            .toLowerCase()
+            .split(/[,&]/)
+            .map(c => c.trim())
 
-                return currentColors.some(color => matchColors.includes(color))
-            })
+        const matches = Object.entries(allData).filter(([_, i]) => {
+            // Filtra apenas itens que têm o tipo oposto (glove/knife)
+            if (matchType === 'knife' && !i.knife) return false
+            if (matchType === 'glove' && !i.glove) return false
+            
+            // Extrair as cores do item candidato
+            const matchColors = (i.mainColor || '')
+                .toLowerCase()
+                .split(/[,&]/)
+                .map(c => c.trim())
 
-            const matchSelect = document.getElementById('match-selector')
-            matchSelect.innerHTML = '<option disabled selected>Suggested options</option>'
+            // Verifica se alguma cor do selecionado está nas cores do candidato
+            return currentColors.some(color => matchColors.includes(color))
+        })
 
-            matches.forEach(([matchKey, matchItem]) => {
-                const opt = document.createElement('option')
-                opt.value = matchKey
-                opt.textContent = toTitleCase(matchKey)
-                matchSelect.appendChild(opt)
-            })
+        const matchSelect = document.getElementById('match-selector')
+        matchSelect.innerHTML = '<option disabled selected>Suggested options</option>'
 
-            if (matches.length > 0) {
-                matchSelect.selectedIndex = 1
-                matchSelect.dispatchEvent(new Event('change'))
-            }
+        matches.forEach(([matchKey, matchItem]) => {
+            const opt = document.createElement('option')
+            opt.value = matchKey
+            opt.textContent = toTitleCase(matchKey)
+            matchSelect.appendChild(opt)
+        })
+
+        if (matches.length > 0) {
+            matchSelect.selectedIndex = 1
+            matchSelect.dispatchEvent(new Event('change'))
         }
-    })
+    }
+})
+
 })

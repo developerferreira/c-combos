@@ -97,7 +97,7 @@
     "fire_and_ice": {
         "description": "The Fire and Ice knife comes in a wide variety of colors, with orange at the tip and blue at the blade.",
         "color": "blue, cian, orange & yellow",
-        "mainColor": "blue",
+        "mainColor": "blue & yellow",
         "knife": "imgs/fire-and-ice_knife.png",
         "knife_price": "11000"
     },
@@ -107,5 +107,61 @@
         "mainColor": "black",
         "knife": "imgs/porcelain_knife.png",
         "knife_price": "3444"
+    },
+    "stained_glass": {
+        "description": "-",
+        "color": "brown, green & gray",
+        "mainColor": "brown & green",
+        "glove": "imgs/stained-glass_glove.png",
+        "glove_price": "3958"
+    },
+    "frenzy": {
+        "description": "-",
+        "color": "cian, red & yellow",
+        "mainColor": "cian",
+        "glove": "imgs/frenzy_glove.png",
+        "glove_price": "8300"
+    },
+    "world_supporter_2023": {
+        "description": "-",
+        "color": "cian, orange & purple",
+        "mainColor": "cian",
+        "knife": "imgs/world-supporter-2023_knife.png",
+        "knife_price": "9900"
+    },
+    "magenta_vice": {
+        "description": "-",
+        "color": "green & pink",
+        "mainColor": "cian & pink",
+        "knife": "imgs/magenta-vice_knife.png",
+        "knife_price": "4000"
+    },
+    "old_money": {
+        "description": "-",
+        "color": "brown & silver",
+        "mainColor": "brown & silver",
+        "knife": "imgs/old-money_knife.png",
+        "knife_price": "6600"
+    },
+    "purple_wave": {
+        "description": "-",
+        "color": "purple & black",
+        "mainColor": "purple",
+        "knife": "imgs/purple-wave_knife.png",
+        "knife_price": "38000"
+    },
+    "radiating_orange": {
+        "description": "-",
+        "color": "orange & yellow",
+        "mainColor": "orange",
+        "knife": "imgs/radiating-orange_knife.png",
+        "knife_price": "42000"
+    },
+    "iridescent": {
+        "description": "-",
+        "color": "pink, cian, purple, yellow, & blue",
+        "mainColor": "pink, cian & purple",
+        "knife": "imgs/iridescent_knife.png",
+        "knife_price": "62500"
     }
 }
