@@ -12,6 +12,9 @@
 
 body {
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -49,6 +52,7 @@ header li > a:hover {
 main {
     display: flex;
     flex-direction: row;
+    flex: 1;
     justify-content: center;
     padding: 20px;
     /* gap: 20px; */
@@ -100,4 +104,28 @@ main {
     border: 1px solid var(--cf-fcolor);
     border-radius: 5px;
     background-color: transparent;
+}
+
+footer {
+    background-color: var(--cf-bgcolor);
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    align-content: center;
+}
+
+footer p {
+    color: white;
+    font-family: sans-serif;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--cf-fcolor);
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }

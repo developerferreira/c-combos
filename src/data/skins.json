@@ -111,7 +111,7 @@
     "stained_glass": {
         "description": "-",
         "color": "brown, green & gray",
-        "mainColor": "brown & green",
+        "mainColor": "brown",
         "glove": "imgs/stained-glass_glove.png",
         "glove_price": "3958"
     },
@@ -153,7 +153,7 @@
     "radiating_orange": {
         "description": "-",
         "color": "orange & yellow",
-        "mainColor": "orange",
+        "mainColor": "orange & yellow",
         "knife": "imgs/radiating-orange_knife.png",
         "knife_price": "42000"
     },
@@ -163,5 +163,96 @@
         "mainColor": "pink, cian & purple",
         "knife": "imgs/iridescent_knife.png",
         "knife_price": "62500"
+    },
+    "reanimation": {
+        "description": "-",
+        "color": "blue & white",
+        "mainColor": "blue & white",
+        "knife": "imgs/reanimation_knife.png",
+        "knife_price": "9000"
+    },
+    "from_the_deep": {
+        "description": "-",
+        "color": "brown",
+        "mainColor": "brown",
+        "knife": "imgs/from-the-deep_knife.png",
+        "knife_price": "6080"
+    },
+    "vibroslice": {
+        "description": "-",
+        "color": "cian, white & black",
+        "mainColor": "cian",
+        "knife": "imgs/iridescent_knife.png",
+        "knife_price": "1500"
+    },
+    "encrypted": {
+        "description": "-",
+        "color": "red & black",
+        "mainColor": "red & black",
+        "knife": "imgs/encrypted_knife.png",
+        "knife_price": "1850"
+    },
+    "deep_cut": {
+        "description": "-",
+        "color": "red & green",
+        "mainColor": "red & green",
+        "knife": "imgs/deep-cut_knife.png",
+        "knife_price": "2400"
+    },
+    "vivid_green": {
+        "description": "-",
+        "color": "green & black",
+        "mainColor": "green",
+        "knife": "imgs/vivid-green_knife.png",
+        "knife_price": "6746"
+    },
+    "full_combo": {
+        "description": "-",
+        "color": "pink, black, white & purple",
+        "mainColor": "pink, white & purple",
+        "glove": "imgs/full-combo_glove.png",
+        "glove_price": "25800"
+    },
+    "red_imperial": {
+        "description": "-",
+        "color": "red, yellow & white",
+        "mainColor": "red",
+        "glove": "imgs/red-imperial_glove.png",
+        "glove_price": "12998"
+    },
+    "purple_imperial": {
+        "description": "-",
+        "color": "purple, yellow & white",
+        "mainColor": "purple",
+        "glove": "imgs/purple-imperial_glove.png",
+        "glove_price": "10340"
+    },
+    "blue_imperial": {
+        "description": "-",
+        "color": "blue, yellow & white",
+        "mainColor": "blue",
+        "glove": "imgs/blue-imperial_glove.png",
+        "glove_price": "9864"
+    },
+    "reach_of_brass": {
+        "description": "-",
+        "color": "white, blue & orange",
+        "mainColor": "white & blue",
+        "glove": "imgs/reach-of-brass_glove.png",
+        "glove_price": "6240"
+    },
+    "snow_ops": {
+        "description": "-",
+        "color": "black",
+        "mainColor": "black",
+        "glove": "imgs/snow-ops_glove.png",
+        "glove_price": "11247"
+    },
+    "target_lock": {
+        "description": "-",
+        "color": "red, black & white",
+        "mainColor": "red, black & white",
+        "glove": "imgs/target-lock_glove.png",
+        "glove_price": "19870"
     }
 }
