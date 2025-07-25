@@ -243,8 +243,8 @@
     },
     "snow_ops": {
         "description": "-",
-        "color": "black",
-        "mainColor": "black",
+        "color": "camo",
+        "mainColor": "camo",
         "glove": "imgs/snow-ops_glove.png",
         "glove_price": "11247"
     },

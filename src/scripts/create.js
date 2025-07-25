@@ -76,25 +76,20 @@ fetch('data/skins.json')
         userItemImg.alt = toTitleCase(selectedName)
 
         const matchType = selectedType === 'knife' ? 'glove' : 'knife'
-
-        // Extrair as cores do item selecionado, separando por ',' e '&' e limpando espaços
         const currentColors = (item.mainColor || '')
             .toLowerCase()
             .split(/[,&]/)
             .map(c => c.trim())
 
         const matches = Object.entries(allData).filter(([_, i]) => {
-            // Filtra apenas itens que têm o tipo oposto (glove/knife)
             if (matchType === 'knife' && !i.knife) return false
             if (matchType === 'glove' && !i.glove) return false
             
-            // Extrair as cores do item candidato
             const matchColors = (i.mainColor || '')
                 .toLowerCase()
                 .split(/[,&]/)
                 .map(c => c.trim())
 
-            // Verifica se alguma cor do selecionado está nas cores do candidato
             return currentColors.some(color => matchColors.includes(color))
         })
 
