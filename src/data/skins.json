@@ -254,5 +254,61 @@
         "mainColor": "red, black & white",
         "glove": "imgs/target-lock_glove.png",
         "glove_price": "19870"
+    },
+    "chronos": {
+        "description": "-",
+        "color": "blue, white & silver",
+        "mainColor": "blue & silver",
+        "glove": "imgs/chronos_glove.png",
+        "glove_price": "6848"
+    },
+    "night_out": {
+        "description": "-",
+        "color": "green, purple & blue",
+        "mainColor": "green & purple",
+        "glove": "imgs/night-out_glove.png",
+        "glove_price": "7479"
+    },
+    "discord": {
+        "description": "-",
+        "color": "red",
+        "mainColor": "red",
+        "glove": "imgs/discord_glove.png",
+        "glove_price": "18879"
+    },
+    "ygolonac": {
+        "description": "-",
+        "color": "black & pink",
+        "mainColor": "pink",
+        "glove": "imgs/ygolonac_glove.png",
+        "glove_price": "53957"
+    },
+    "st_of_yearning": {
+        "description": "-",
+        "color": "purple & yellow",
+        "mainColor": "purple",
+        "glove": "imgs/st-of-yearning_glove.png",
+        "glove_price": "80500"
+    },
+    "acid": {
+        "description": "-",
+        "color": "green, black & white",
+        "mainColor": "green",
+        "glove": "imgs/acid_glove.png",
+        "glove_price": "8650"
+    },
+    "mainframe_one": {
+        "description": "-",
+        "color": "black & green",
+        "mainColor": "black & green",
+        "glove": "imgs/mainframe-one_glove.png",
+        "glove_price": "9866"
+    },
+    "mainframe_two": {
+        "description": "-",
+        "color": "white & green",
+        "mainColor": "white & green",
+        "glove": "imgs/mainframe-two_glove.png",
+        "glove_price": "39878"
     }
 }
