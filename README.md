@@ -4,7 +4,7 @@
 
 
 C-Combos helps you choose the best option for your combo in Critical Ops! You can even filter by price to find the one that fits your coins. <br>
-<a href="https://developerferreira.github.io/c-combos/">Start</a>
+<a href="https://developerferreira.github.io/c-combos/">Try it now</a>
 
 <hr>
 
